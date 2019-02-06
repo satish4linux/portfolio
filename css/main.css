@@ -1091,15 +1091,15 @@ header {
 }
 header .row {
 	position: relative;
-	min-height: 66px;
+	min-height: 50px;
 }
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
-	min-height: 66px;
+	min-width: 100%;
+	min-height: 50px;
 	position: absolute;
-	left: 90px;
+	left: 0;
 	top: 0;
 }
 header .logo {
