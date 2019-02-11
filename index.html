@@ -179,14 +179,19 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll" onclick="window.open("mailto:satish.pandey.nitp@gmail.com")">Hire Me</a>
+   			<a href="#" id="Anchor" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
    			<a href="http://satishpandey.co.in/doc/Satish Pandey.pdf" title="Download CV" class="button button-primary" target="_blank">Download CV</a>
    		</div>   		
    	</div>
 
    </section> <!-- /process-->    
 
-
+<script>
+    function myFunction() {
+        window.open("mailto:satish.pandey.nitp@gmail.com");
+    }
+    Anchor.addEventListener('click', myFunction, false);
+</script>
    <!-- resume Section
    ================================================== -->
 	<section id="resume" class="grey-section">
