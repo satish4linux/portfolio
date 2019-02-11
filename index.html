@@ -128,10 +128,6 @@
    					<span>Satish Pandey</span>
    				</li>
    				<li>
-   					<strong>Birth Date:</strong>
-   					<span>August 07, 1997</span>
-   				</li>
-   				<li>
    					<strong>Email:</strong>
    					<span>satish.pandey.nitp@gmail.com</span>
    				</li>
@@ -169,7 +165,7 @@
 						<strong>Miscellaneous:</strong>
 						<span>REST-based Web Services, WebRTC</span>
 					</li>
-				</ul>
+				</ul> <!-- /info-list -->
 				<ul class="skill-bars">
 				   <li>
 				   	<div class="progress percent75"><span>75%</span></div>
@@ -192,19 +188,13 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="#" id="Anchor" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
    			<a href="http://satishpandey.co.in/doc/Satish Pandey.pdf" title="Download CV" class="button button-primary" target="_blank">Download CV</a>
    		</div>   		
    	</div>
 
    </section> <!-- /process-->    
-
-<script>
-    function myFunction() {
-        window.open('mailto:satish.pandey.nitp@gmail.com?subject=Hello, Satish Pandey&body=I need to talk to you!');
-    }
-    Anchor.addEventListener('click', myFunction, false);
-</script>
+	
    <!-- resume Section
    ================================================== -->
 	<section id="resume" class="grey-section">
@@ -445,7 +435,7 @@
 	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
 	               </div>                      
                  <div class="form-field">
-                     <button class="submitform">Submit</button>
+                     <button class="submitform" id="Anchor" >Submit</button>
                      <div id="submit-loader">
                         <div class="text-loader">Sending...</div>                             
        				      <div class="s-loader">
@@ -470,6 +460,13 @@
          </div> <!-- /col-twelve -->
    		
    	</div> <!-- /contact-form -->
+		
+<script>
+    function myFunction() {
+        window.open('mailto:satish.pandey.nitp@gmail.com?subject='+contactSubject.getElementById.innerHTML+' Pandey&body='+contactMessage.getElementById.innerHTML+'');
+    }
+    Anchor.addEventListener('click', myFunction, false);
+</script>
 
    	<div class="row contact-info">
 
